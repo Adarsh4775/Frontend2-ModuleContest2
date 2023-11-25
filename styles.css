@@ -1,0 +1,102 @@
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+.filterboot{
+    padding:10px;
+    color:white;
+    background-color: orangered;
+    border:none;
+    border-radius:10px;
+}
+
+/* Apply a basic font style */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for the recipe container */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style for each recipe card */
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+/* Style for recipe images */
+.recipe-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Style for recipe details */
+.recipe-card h3,
+.recipe-card p {
+    padding: 10px;
+}
+
+/* Style for the like button */
+.like-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style for active toggle buttons */
+.toggle-buttons button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style for search bar */
+#searchBar {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Style for toggle buttons container */
+.toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Style for rating filters container */
+.rating-filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+    .recipe-container {
+        padding: 10px;
+    }
+
+    .recipe-card {
+        width: 100%;
+    }
+}
